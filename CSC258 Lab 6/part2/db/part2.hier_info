@@ -1,0 +1,74 @@
+|part2
+KEY[0] => KEY[0].IN4
+KEY[1] => ~NO_FANOUT~
+SW[0] => SW[0].IN4
+SW[1] => comb.IN1
+SW[1] => comb.IN0
+SW[1] => comb.IN0
+SW[1] => comb.IN0
+SW[1] => _.IN1
+
+
+|part2|d_flip_flop:dff3
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+Rst => Q~reg0.PRESET
+
+
+|part2|d_flip_flop:dff2
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+Rst => Q~reg0.PRESET
+
+
+|part2|d_flip_flop:dff1
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+Rst => Q~reg0.PRESET
+
+
+|part2|d_flip_flop:dff0
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+Rst => Q~reg0.PRESET
+
+
+|part2|convert:con1
+x[0] => Equal0.IN3
+x[0] => Equal1.IN0
+x[0] => Equal2.IN1
+x[0] => Equal3.IN2
+x[0] => Equal4.IN3
+x[0] => Equal5.IN3
+x[0] => Equal6.IN3
+x[0] => Equal7.IN3
+x[0] => Equal8.IN3
+x[1] => Equal0.IN2
+x[1] => Equal1.IN3
+x[1] => Equal2.IN0
+x[1] => Equal3.IN1
+x[1] => Equal4.IN2
+x[1] => Equal5.IN2
+x[1] => Equal6.IN2
+x[1] => Equal7.IN2
+x[1] => Equal8.IN1
+x[2] => Equal0.IN1
+x[2] => Equal1.IN2
+x[2] => Equal2.IN3
+x[2] => Equal3.IN0
+x[2] => Equal4.IN1
+x[2] => Equal5.IN1
+x[2] => Equal6.IN1
+x[2] => Equal7.IN1
+x[2] => Equal8.IN2
+x[3] => Equal0.IN0
+x[3] => Equal1.IN1
+x[3] => Equal2.IN2
+x[3] => Equal3.IN3
+x[3] => Equal4.IN0
+x[3] => Equal5.IN0
+x[3] => Equal6.IN0
+x[3] => Equal7.IN0
+x[3] => Equal8.IN0
+
+

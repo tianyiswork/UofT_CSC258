@@ -1,0 +1,14 @@
+|part6
+SW[17] => H0.IN0
+SW[17] => H0.IN0
+SW[17] => H0.IN0
+SW[16] => H0.IN1
+SW[16] => H0.IN1
+SW[16] => H0.IN1
+SW[15] => H0.IN1
+SW[15] => H0[3].IN1
+SW[15] => H0.IN1
+SW[15] => H0.IN1
+SW[15] => H0.IN1
+
+

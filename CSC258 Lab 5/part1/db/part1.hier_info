@@ -1,0 +1,36 @@
+|part1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+
+
+|part1|full_adder:FA0
+a => Add0.IN1
+b => Add0.IN2
+cin => ~NO_FANOUT~
+
+
+|part1|full_adder:FA1
+a => Add0.IN1
+b => Add0.IN2
+cin => ~NO_FANOUT~
+
+
+|part1|full_adder:FA2
+a => Add0.IN1
+b => Add0.IN2
+cin => ~NO_FANOUT~
+
+
+|part1|full_adder:FA3
+a => Add0.IN1
+b => Add0.IN2
+cin => ~NO_FANOUT~
+
+

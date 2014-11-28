@@ -1,0 +1,66 @@
+module LFSR4bit (KEY, LEDG, HEX0);
+	input [1:0] KEY;
+	output [3:0] LEDG;
+	output [0:6] HEX0;
+
+	wire [3:0] Q;
+	wire D;
+	assign D = Q[2]^Q[3];
+	Flip_Flop F0 (KEY[0], D, Q[0]);
+	Flip_Flop F1 (KEY[0], Q[0], Q[1]);
+	Flip_Flop F2 (KEY[0], Q[1], Q[2]);
+	Flip_Flop F3 (KEY[0], Q[2], Q[3]);
+
+	assign LEDG = Q;
+	QtoHEX Q0 (Q, HEX0);
+endmodule
+
+module Flip_Flop (Clk, D, Q);
+	input Clk, D;
+	output Q;
+
+	wire Qm;
+	Dlatch D0 (~Clk, D, Qm);
+	Dlatch D1 (Clk, Qm, Q);
+endmodule
+
+module Dlatch (Clk, D, Q);
+	input Clk, D;
+	output Q;
+
+	wire R_g, S_g, Qa, Qb /* synthesis keep */ ;
+	assign S = D;
+	assign R = ~D;
+	assign S_g = S & Clk;
+	assign R_g = R & Clk;
+	assign Qa = ~(R_g | Qb);
+	assign Qb = ~(S_g | Qa);
+	assign Q = Qa;
+
+endmodule
+
+module QtoHEX (Q, HEX);
+	input [3:0] Q;
+	output reg [0:6] HEX;
+
+	always begin
+		case (Q)
+		0:HEX=7'b0000001;
+		1:HEX=7'b1001111;
+		2:HEX=7'b0010010;
+		3:HEX=7'b0000110;
+		4:HEX=7'b1001100;
+		5:HEX=7'b0100100;
+		6:HEX=7'b0100000;
+		7:HEX=7'b0001111;
+		8:HEX=7'b0000000;
+		9:HEX=7'b0001100;
+		10:HEX=7'b0001000;
+		11:HEX=7'b1100000;
+		12:HEX=7'b0110001;
+		13:HEX=7'b1000010;
+		14:HEX=7'b0110000;
+		15:HEX=7'b0111000;
+		endcase
+	end
+endmodule

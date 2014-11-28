@@ -1,0 +1,298 @@
+Quartus II 64-Bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+14
+1343
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+part3
+# storage
+db|part3.(0).cnf
+db|part3.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part3.v
+f2ca84901bcce439329eaf41232eceb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+d_flip_flop
+# storage
+db|part3.(1).cnf
+db|part3.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part3.v
+f2ca84901bcce439329eaf41232eceb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+d_flip_flop:dff3
+d_flip_flop:dff2
+d_flip_flop:dff1
+d_flip_flop:dff0
+}
+# macro_sequence
+
+# end
+# entity
+convert
+# storage
+db|part3.(2).cnf
+db|part3.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part3.v
+f2ca84901bcce439329eaf41232eceb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+convert:con1
+}
+# macro_sequence
+
+# end
+# entity
+Reset_Delay
+# storage
+db|part3.(3).cnf
+db|part3.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part3.v
+f2ca84901bcce439329eaf41232eceb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Reset_Delay:r0
+}
+# macro_sequence
+
+# end
+# entity
+LCD_Display
+# storage
+db|part3.(4).cnf
+db|part3.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part3.v
+f2ca84901bcce439329eaf41232eceb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+HOLD
+0000
+PARAMETER_UNSIGNED_BIN
+DEF
+FUNC_SET
+0001
+PARAMETER_UNSIGNED_BIN
+DEF
+DISPLAY_ON
+0010
+PARAMETER_UNSIGNED_BIN
+DEF
+MODE_SET
+0011
+PARAMETER_UNSIGNED_BIN
+DEF
+Print_String
+0100
+PARAMETER_UNSIGNED_BIN
+DEF
+LINE2
+0101
+PARAMETER_UNSIGNED_BIN
+DEF
+RETURN_HOME
+0110
+PARAMETER_UNSIGNED_BIN
+DEF
+DROP_LCD_E
+0111
+PARAMETER_UNSIGNED_BIN
+DEF
+RESET1
+1000
+PARAMETER_UNSIGNED_BIN
+DEF
+RESET2
+1001
+PARAMETER_UNSIGNED_BIN
+DEF
+RESET3
+1010
+PARAMETER_UNSIGNED_BIN
+DEF
+DISPLAY_OFF
+1011
+PARAMETER_UNSIGNED_BIN
+DEF
+DISPLAY_CLEAR
+1100
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+LCD_Display:u1
+}
+# macro_sequence
+
+# end
+# entity
+LCD_display_string
+# storage
+db|part3.(5).cnf
+db|part3.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+part3.v
+f2ca84901bcce439329eaf41232eceb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+LCD_Display:u1|LCD_display_string:u1
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,18 @@
+module part3 (SW, LEDR, LEDG);
+
+	input [17:0] SW; 
+	output [17:0] LEDR; 
+	output [2:0] LEDG; 
+	
+	wire X, Y, U, V, W, S, M;
+
+	assign LEDR = SW[17:0];	
+	assign S = SW[17:15];		
+	assign M = LEDG[2:0];
+	assign M = (S == 3'b000 )? SW[2:0];
+	assign M = (S == 3'b001 )? SW[5:3];
+	assign M = (S == 3'b010 )? SW[8:6];
+	assign M = (S == 3'b011 )? SW[11:9];
+	assign M = (S == 3'b100 )|(S == 3'b101 )|(S == 3'b110 )|(S == 3'b111 )? SW[14:12];
+	
+endmodule

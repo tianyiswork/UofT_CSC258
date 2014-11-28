@@ -1,0 +1,76 @@
+module part5 (SW, KEY, LEDG, HEX0);
+	input [3:0] SW;
+	input [1:0] KEY;
+	output [3:0] LEDG;
+	output [0:6] HEX0;
+
+	wire [3:0] Q;
+
+	flip_flop F0 (KEY[0], Q[2]^Q[3], Q[0]);
+	flip_flop F1 (KEY[0], Q[0], Q[1]);
+	flip_flop F2 (KEY[0], Q[1], Q[2]);
+	flip_flop F3 (KEY[0], Q[2], Q[3]);
+
+	assign LEDG = Q;
+	hex_ssd h0 (Q, HEX0);
+endmodule
+
+module flip_flop (Clk, D, Q);
+	input Clk, D;
+	output Q;
+
+	wire Qm;
+	D_latch D0 (~Clk, D, Qm);
+	D_latch D1 (Clk, Qm, Q);
+endmodule
+
+module D_latch (Clk, D, Q, Clr);
+   input D, Clk, Clr;
+   output reg Q;
+   always @ (posedge Clk)
+     if (Clk)
+       Q = D;
+ 	else
+     if (Clr)
+       Q = 0;
+endmodule
+
+module hex_ssd (BIN, SSD);
+   output reg [6:0] SSD;
+   input [3:0] BIN;
+ 
+   always @(BIN)
+     case(BIN)
+       4'h0: SSD = ~7'b0111111;
+		 4'h1: SSD = ~7'b0000110;
+		 4'h2: SSD = ~7'b1011011;
+		 4'h3: SSD = ~7'b1001111;
+		 4'h4: SSD = ~7'b1100110;
+		 4'h5: SSD = ~7'b1101101;
+		 4'h6: SSD = ~7'b1111101;
+		 4'h7: SSD = ~7'b0000111;
+		 4'h8: SSD = ~7'b1111111;
+		 4'h9: SSD = ~7'b1100111;
+		 4'hA: SSD = ~7'b1110111;
+		 4'hB: SSD = ~7'b1111100;
+		 4'hC: SSD = ~7'b0111001;
+		 4'hD: SSD = ~7'b1011110;
+		 4'hE: SSD = ~7'b1111001;
+		 4'hF: SSD = ~7'b1110001;
+		 default: SSD = ~7'b1111001;
+	  endcase
+endmodule
+
+//module Dlatch (Clk, D, Q);
+//	input Clk, D;
+//	output Q;
+
+//	wire R_g, S_g, Qa, Qb /* synthesis keep */ ;
+//	assign S = D;
+//	assign R = ~D;
+//	assign S_g = S & Clk;
+//	assign R_g = R & Clk;
+//	assign Qa = ~(R_g | Qb);
+//	assign Qb = ~(S_g | Qa);
+//	assign Q = Qa;
+//endmodule

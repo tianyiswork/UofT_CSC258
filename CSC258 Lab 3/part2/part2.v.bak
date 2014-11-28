@@ -1,0 +1,10 @@
+module part1 (Clk, R, S, Q);
+	input Clk, R, S;
+	output Q;
+	wire R g, S g, Qa, Qb /* synthesis keep */ ;
+	and (R g, R, Clk);
+	and (S g, S, Clk);
+	nor (Qa, R g, Qb);
+	nor (Qb, S g, Qa);
+	assign Q = Qa;
+endmodule

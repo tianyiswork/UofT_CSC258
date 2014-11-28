@@ -1,0 +1,40 @@
+|part6
+SW[0] => SW[0].IN3
+SW[1] => SW[1].IN2
+
+
+|part6|D_latch:L0
+Clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+
+
+|part6|flippyflop:F0
+Clk => Clk.IN1
+D => D.IN1
+
+
+|part6|flippyflop:F0|D_latch:D0
+Clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+
+
+|part6|flippyflop:F0|D_latch:D1
+Clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+
+
+|part6|flippyflop:F1
+Clk => Clk.IN1
+D => D.IN1
+
+
+|part6|flippyflop:F1|D_latch:D0
+Clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+
+
+|part6|flippyflop:F1|D_latch:D1
+Clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+
+

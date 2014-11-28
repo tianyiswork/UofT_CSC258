@@ -1,0 +1,24 @@
+|part5
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+
+
+|part5|flipflop:F0
+Clk => Clk.IN1
+D => D.IN1
+
+
+|part5|flipflop:F0|mylatch:D0
+Clk => R_g.IN0
+Clk => S_g.IN0
+D => S_g.IN1
+D => R_g.IN1
+
+
+|part5|flipflop:F0|mylatch:D1
+Clk => R_g.IN0
+Clk => S_g.IN0
+D => S_g.IN1
+D => R_g.IN1
+
+

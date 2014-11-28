@@ -1,0 +1,13 @@
+module part4 (SW, HEX0);
+
+	input [2:0] SW; 
+	output [6:0] HEX0;
+	
+	assign C = SW[2:0]
+	assign HEX0 = (C == 3'b000 )? 7'b000_1001 // H
+	assign HEX0 = (C == 3'b001 )? 7'b000_1000: // A
+	assign HEX0 = (C == 3'b010 )? 7'b000_1100: // P
+	assign HEX0 = (C == 3'b011 )? 7'b000_1100: // P
+	assign HEX0 = (C == 3'b100 )? 7'b001_0001; // Y
+	assign HEX0 = (C == 3'b101 )|(C == 3'b110 )|(C == 3'b111 )? 7'b111_1111; // 'blank'
+endmodule

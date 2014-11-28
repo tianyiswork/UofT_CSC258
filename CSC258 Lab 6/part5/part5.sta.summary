@@ -1,0 +1,181 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -2.859
+TNS   : -86.763
+
+Type  : Slow Model Setup 'audio_clock:u4|LRCK_1X'
+Slack : -2.725
+TNS   : -47.323
+
+Type  : Slow Model Setup 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -2.554
+TNS   : -126.819
+
+Type  : Slow Model Setup 'p1|altpll_component|pll|clk[1]'
+Slack : -0.118
+TNS   : -0.236
+
+Type  : Slow Model Setup 'audio_clock:u4|oAUD_BCK'
+Slack : -0.090
+TNS   : -0.177
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -2.550
+TNS   : -2.550
+
+Type  : Slow Model Hold 'p1|altpll_component|pll|clk[1]'
+Slack : -0.107
+TNS   : -0.214
+
+Type  : Slow Model Hold 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'audio_clock:u4|oAUD_BCK'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'audio_clock:u4|LRCK_1X'
+Slack : 0.534
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'p1|altpll_component|pll|clk[1]'
+Slack : -4.203
+TNS   : -58.816
+
+Type  : Slow Model Recovery 'audio_clock:u4|LRCK_1X'
+Slack : -1.039
+TNS   : -25.174
+
+Type  : Slow Model Recovery 'audio_clock:u4|oAUD_BCK'
+Slack : -0.482
+TNS   : -1.928
+
+Type  : Slow Model Removal 'audio_clock:u4|oAUD_BCK'
+Slack : 1.252
+TNS   : 0.000
+
+Type  : Slow Model Removal 'audio_clock:u4|LRCK_1X'
+Slack : 1.340
+TNS   : 0.000
+
+Type  : Slow Model Removal 'p1|altpll_component|pll|clk[1]'
+Slack : 3.976
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -39.380
+
+Type  : Slow Model Minimum Pulse Width 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -0.500
+TNS   : -56.000
+
+Type  : Slow Model Minimum Pulse Width 'audio_clock:u4|LRCK_1X'
+Slack : -0.500
+TNS   : -31.000
+
+Type  : Slow Model Minimum Pulse Width 'audio_clock:u4|oAUD_BCK'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_27'
+Slack : 18.518
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'p1|altpll_component|pll|clk[1]'
+Slack : 26.777
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -0.831
+TNS   : -20.693
+
+Type  : Fast Model Setup 'audio_clock:u4|LRCK_1X'
+Slack : -0.803
+TNS   : -8.482
+
+Type  : Fast Model Setup 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -0.694
+TNS   : -30.231
+
+Type  : Fast Model Setup 'p1|altpll_component|pll|clk[1]'
+Slack : -0.177
+TNS   : -0.354
+
+Type  : Fast Model Setup 'audio_clock:u4|oAUD_BCK'
+Slack : 0.496
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.591
+TNS   : -1.591
+
+Type  : Fast Model Hold 'p1|altpll_component|pll|clk[1]'
+Slack : 0.062
+TNS   : 0.000
+
+Type  : Fast Model Hold 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'audio_clock:u4|oAUD_BCK'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'audio_clock:u4|LRCK_1X'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'p1|altpll_component|pll|clk[1]'
+Slack : -2.582
+TNS   : -36.135
+
+Type  : Fast Model Recovery 'audio_clock:u4|LRCK_1X'
+Slack : -0.355
+TNS   : -7.870
+
+Type  : Fast Model Recovery 'audio_clock:u4|oAUD_BCK'
+Slack : -0.095
+TNS   : -0.380
+
+Type  : Fast Model Removal 'audio_clock:u4|oAUD_BCK'
+Slack : 0.975
+TNS   : 0.000
+
+Type  : Fast Model Removal 'audio_clock:u4|LRCK_1X'
+Slack : 1.026
+TNS   : 0.000
+
+Type  : Fast Model Removal 'p1|altpll_component|pll|clk[1]'
+Slack : 2.466
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -39.380
+
+Type  : Fast Model Minimum Pulse Width 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -0.500
+TNS   : -56.000
+
+Type  : Fast Model Minimum Pulse Width 'audio_clock:u4|LRCK_1X'
+Slack : -0.500
+TNS   : -31.000
+
+Type  : Fast Model Minimum Pulse Width 'audio_clock:u4|oAUD_BCK'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_27'
+Slack : 18.518
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'p1|altpll_component|pll|clk[1]'
+Slack : 26.777
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,12 @@
+|part4
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+
+
+|part4|flipflop:D0
+Clk => R_g.IN0
+Clk => S_g.IN0
+D => S_g.IN1
+D => R_g.IN1
+
+

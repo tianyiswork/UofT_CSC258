@@ -1,0 +1,7 @@
+|part2
+Clk => R_g.IN0
+Clk => S_g.IN0
+R => R_g.IN1
+S => S_g.IN1
+
+

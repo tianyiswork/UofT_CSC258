@@ -1,0 +1,30 @@
+|part3
+En => En.IN1
+Clk => Clk.IN4
+Clr => Clr.IN4
+
+
+|part3|t_flipflop:T0
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+
+
+|part3|t_flipflop:T1
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+
+
+|part3|t_flipflop:T2
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+
+
+|part3|t_flipflop:T3
+En => Q.OUTPUTSELECT
+Clk => Q~reg0.CLK
+Clr => Q.OUTPUTSELECT
+
+

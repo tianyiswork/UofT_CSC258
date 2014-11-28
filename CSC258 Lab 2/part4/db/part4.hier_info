@@ -1,0 +1,152 @@
+|part4
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => SW[8].IN1
+SW[9] => ~NO_FANOUT~
+SW[10] => ~NO_FANOUT~
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => ~NO_FANOUT~
+SW[17] => ~NO_FANOUT~
+
+
+|part4|comparator:C0
+V[0] => ~NO_FANOUT~
+V[1] => z.IN0
+V[2] => z.IN1
+V[3] => z.IN1
+
+
+|part4|comparator:C1
+V[0] => ~NO_FANOUT~
+V[1] => z.IN0
+V[2] => z.IN1
+V[3] => z.IN1
+
+
+|part4|full_adder:FA0
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|part4|full_adder:FA1
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|part4|full_adder:FA2
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|part4|full_adder:FA3
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|part4|comparator9:C2
+V[0] => ~NO_FANOUT~
+V[1] => z.IN0
+V[2] => z.IN0
+V[3] => z.IN1
+V[3] => z.IN1
+V[4] => z.IN1
+
+
+|part4|circuitA:AA
+V[0] => A[0].DATAIN
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A[1].DATAIN
+V[2] => A.IN1
+V[3] => A.IN1
+V[3] => A.IN1
+
+
+|part4|mux_4bit_2to1:M0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+s => M.IN0
+U[0] => M.IN1
+U[1] => M.IN1
+U[2] => M.IN1
+U[3] => M.IN1
+V[0] => M.IN1
+V[1] => M.IN1
+V[2] => M.IN1
+V[3] => M.IN1
+
+
+|part4|circuitB:BB
+z => HEX1[5].DATAIN
+z => HEX1[0].DATAIN
+z => HEX1[3].DATAIN
+z => HEX1[4].DATAIN
+
+
+|part4|b2d_7seg:S0
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN1
+SW[0] => HEX0.IN0
+SW[0] => HEX0.IN0
+SW[0] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[1] => HEX0.IN1
+SW[2] => HEX0.IN0
+SW[2] => HEX0.IN0
+SW[2] => HEX0.IN0
+SW[2] => HEX0.IN1
+SW[3] => HEX0.IN1
+SW[3] => HEX0.IN1
+SW[3] => HEX0.IN1
+
+
