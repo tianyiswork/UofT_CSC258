@@ -1,0 +1,53 @@
+module maze(input [9:0]x, input[9:0]y, input clk, input moveup, input movedown, input moveright, output [9:0] red, output [9:0] green, output [9:0] blue);
+
+reg [2:0] idx;
+reg [19:0] slowclk = 0; 
+
+assign red = (idx[0]? 10'h3ff: 10'h000);
+assign green = (idx[1]? 10'h3ff: 10'h000);
+assign blue = (idx[2]? 10'h3ff: 10'h000);
+
+//drawing background
+always@(x, y)
+begin
+	if ((x < 123) & (x > 46) & (y > 47) & (y < 327))
+		begin
+		idx = 3'd7;
+		end
+	else if ((x > 123) & (x < 158) & (y > 250) & (y < 328))
+		begin
+		idx = 3'd7;
+		end
+	else if ((x > 158) & (x < 236) & (y > 250) & (y < 429))
+		begin
+		idx = 3'd7;
+		end
+	else if ((x > 236) & (x < 281) & (y < 429) & (y > 351))
+		begin
+		idx = 3'd7;
+		end
+	else if ((x > 281) & (x < 358) & (y < 429) & (y > 81))
+		begin
+		idx = 3'd7;
+		end
+	else if ((x > 358) & (x < 426) & (y > 81) & (y < 159))
+		begin
+		idx = 3'd7;
+		end
+	else if ((x > 426) & (x < 503) & (y > 81) & (y < 299))
+		begin
+		idx = 3'd7;
+		end
+	else if ((x > 503) & (x < 609) & (y < 299) & (y > 222))
+		begin
+		idx = 3'd7;
+		end
+	else 
+		begin
+		red = 542;
+		green = 829;
+		blue = 941;
+		end
+end
+
+endmodule
