@@ -1,4 +1,4 @@
-# UofT_CSC258
+# UofT CSC258 - Computer Organization
 
 Course Description (from course website):
 
